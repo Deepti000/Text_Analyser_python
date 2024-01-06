@@ -1,8 +1,8 @@
-#Press Shift+Enter to run the code
+####  Step-1 Define a string. #####
+
 givenstring="Lorem ipsum dolor! diam amet, consetetur Lorem magna. sed diam nonumy eirmod tempor. diam et labore? et diam magna. et diam amet."
 
-#Press Shift+Enter to run the code
-import string
+
 class TextAnalyzer(object):
     
     def __init__ (self, text):
