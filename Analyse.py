@@ -4,13 +4,14 @@ givenstring="Lorem ipsum dolor! diam amet, consetetur Lorem magna. sed diam nonu
 
 
 class TextAnalyzer(object):
-    
+    ####  constructor which remove white spaces and convert string into lower case #####
     def __init__ (self, text):
         # remove punctuation
         ftext = text.replace('.','').replace('!','').replace('?','').replace(',','')
         # make text lowercase
         self.fmtText = ftext.lower()
-        
+    
+    #### count frewuency of all words in string ####   
     def freqAll(self):        
         # split text into words
         word = self.fmtText.split()
@@ -22,7 +23,8 @@ class TextAnalyzer(object):
             else:
                 dic[i] += 1
         return dic
-           
+
+    #### check frequency of given word #####
     def freqOf(self,word):
         # get frequency map
         dic = self.freqAll()
